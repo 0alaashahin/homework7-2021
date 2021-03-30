@@ -49,3 +49,22 @@ document.querySelector("#orig").addEventListener
 	console.log("Back to normal");
 	video.classList.remove("oldSchool");
 });
+
+document.querySelector("#mute").addEventListener
+("click", function enableMute() {
+	console.log("mute");
+	video.muted = true;
+});
+
+document.querySelector("#mute").addEventListener
+("click", function disableMute() {
+	console.log("unmute");
+	video.muted = false;
+});
+
+
+document.querySelector("#skip").addEventListener
+("click", function skip() {
+	console.log("Skip ahead");
+    video.currentTime += 15;
+});
